@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main(int argc, char** argv) 
+{
+int N,M;
+cout<<"Кол-во строк: ";
+cin>>N;
+cout<<"Кол-во столбцов: ";
+cin>>M;
+cout<<"Матрица: ";
+int arr[N][M]={0};
+for(int i=0;i<N;i++ )
+{
+  for (int j=0;j<M;j++)
+  {
+    cout<<" массив["<<i<<"]["<<j<<"]=";
+    cin>>arr[i][j];
+  }
+}
+for(int i=0;i<N;i++ )
+{
+  for (int j=0;j<M;j++)
+  {
+
+    cout<<arr[i][j]<<" ";
+  }
+  cout<<endl;
+}
+    system("pause");
+    return 0;
+}
